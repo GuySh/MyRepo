@@ -3,7 +3,7 @@ public class calculator {
 
 	public int Add(String str)
 	{
-		if(str.isEmpty())
+		if(isEmpty(str))
 		{
 			return 0;
 		}
@@ -18,4 +18,8 @@ public class calculator {
 		}
 	}
 
+	public boolean isEmpty(String str)
+	{
+		return str.isEmpty();
+	}
 }
