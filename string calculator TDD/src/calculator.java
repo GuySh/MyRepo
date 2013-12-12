@@ -8,6 +8,6 @@ public class calculator {
 			return 0;
 		}
 		
-		return 1;
+		return Integer.parseInt(str);
 	}
 }
