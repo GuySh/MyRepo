@@ -8,7 +8,7 @@ public class StringCalculatorTest {
 	@Test
 	public void EmptyZero() throws Exception
 	{
-		calc=new calculator();
+		calculator calc=new calculator();
 		assertEquals(calc.Add(""), 0);
 	}
 
