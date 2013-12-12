@@ -32,4 +32,10 @@ public class StringCalculatorTest {
 		assertEquals(calc.Add("1,2"), 3);
 	}
 
+	@Test
+	public void lotOfNumbers() throws Exception
+	{
+		assertEquals(calc.Add("1,2,3,4"), 10);
+	}
+
 }
