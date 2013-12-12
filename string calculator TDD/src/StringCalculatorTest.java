@@ -1,15 +1,29 @@
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 
 public class StringCalculatorTest {
 
-	@Test
-	public void EmptyZero() throws Exception
+	private calculator calc;
+	
+	@Before
+	public void init()
 	{
-		calculator calc=new calculator();
+		calc=new calculator();
+	}
+	
+	@Test
+	public void EmptyZero()
+	{
 		assertEquals(calc.Add(""), 0);
+	}
+	
+	@Test
+	public void oneNumber()
+	{
+		assertEquals(calc.Add("1"), 1);
 	}
 
 }
